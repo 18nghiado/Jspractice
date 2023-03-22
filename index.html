@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+    <head>
+        <title>Js on steroid</title>
+        <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" href ="script.js">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class ="container-1">   
+            <h2> Challenge 1: Your Age In Days</h2> 
+            <div class ="flex-box-container-1">
+                <div>
+                    <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+                </div>
+                
+                <div>
+                    <button class ="btn btn-danger" onclick="reset() ">Reset</button>
+                </div>
+            </div>
+
+            <div class = "flex-box-container-1">
+                <div id = "flex-box-result"></div>
+            </div>
+        </div>
+        
+        <div class = "container-2">
+            <h2> Challenge 2: Cat generator</h2>
+            <button class ="btn btn-success" id = "cat-generator" onclick="generateCat()">Generate Cat</button>
+            <div class = "flex-box-container-2" id = "flex-cat-gen">
+                
+            </div>
+        </div>
+
+        <div class = "container-3">
+            <h2> Challenge 3: Rock Paper Scissors</h2>
+            <div class = "flex-box-rps" id = "flex-box-rps-div">
+                <img id ="rock" src ="https://www.pinclipart.com/picdir/middle/574-5745181_rock-paper-scissors-clipart.png" alt = "" width = 150 height=150 onclick="rpsGame(this)">
+                <img id ="paper" src ="https://i.pinimg.com/736x/09/f8/1c/09f81ca4886b06c5296bc029b4f2080f.jpg" alt = "" width = 150 height=150 onclick="rpsGame(this)">
+                <img id ="scissors" src="https://tse4.mm.bing.net/th?id=OIP.KkXzEjheqmVIlWG_qynnjgHaID&pid=Api&P=0" alt = "" width = 150 height=150 onclick="rpsGame(this)">
+            </div>
+        </div>
+
+        <script src = "script.js"></script>
+    </body>
+</html>
